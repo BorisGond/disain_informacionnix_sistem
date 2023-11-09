@@ -26,22 +26,22 @@ function getDivisors(num) {
   alert(getDivisors(12));
 
 
-  //№3
+//№3
 
-  function stringToArray(str){
-    return str.split('');
-  }
-  var string = "Hello, World!";
-  var array = stringToArray(string);
-  console.log(array); 
+function stringToArray(str){
+return str.split('');
+}
+var string = "Hello, World!";
+var array = stringToArray(string);
+    console.log(array); 
 
 
-  //№4
+//№4
 
-  function reverseString(str){
+function reverseString(str){
     return str.split('').reverse().join('');
-  }
-  var string = "Hello, World!";
-  var reversedString = reverseString(string);
+}
+var string = "Hello, World!";
+var reversedString = reverseString(string);
   console.log(reversedString); 
-//Гондалев 2ИСиП-621
+//Гондалев 3ИСиП-621
