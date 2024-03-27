@@ -27,7 +27,7 @@ function recountTotal() {
     }
 }
 
-function allowEdit(td) {
+function allowEd6it(td) {
     td.addEventListener('dblclick', function () {
         let inner_input = document.createElement('input')
         inner_input.textContent = td.textContent

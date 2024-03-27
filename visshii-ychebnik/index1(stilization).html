@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение размеров div</title>
+    <script defer src="script.js"></script>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 150px;
+            background-color: lightblue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<!--    ЗАДАНИЕ стр.2
+    <div id="myDiv"></div>
+    <button onclick="changeSize()">Изменить размер</button>
+    <button onclick="showSize()">Показать размеры</button>
+    <button onclick="showFontSize()">Показать размер шрифта</button>
+    <script>
+    function changeSize() {
+        document.getElementById('myDiv').style.width = '400px';
+        document.getElementById('myDiv').style.height = '300px';
+    }
+    function showSize() {
+        let width = document.getElementById('myDiv').offsetWidth;
+        let height = document.getElementById('myDiv').offsetHeight;
+        alert('Ширина: ' + width + 'px, Высота: ' + height + 'px');
+    }
+    
+    function showFontSize() {
+        let fontSize = window.getComputedStyle(document.getElementById('myDiv')).fontSize;
+        fontSize = parseInt(fontSize);
+        alert('Размер шрифта: ' + fontSize);
+    }
+    </script> -->
+<!--     ЗАДАНИЕ 3стр.
+    <div id="elem" style="width: 300px; height: 200px; border: 1px solid red;">
+        text
+    </div>
+    <button onclick="increaseSize()">Увеличить размер</button>
+    <script>
+       function increaseSize() {
+            let elem = document.getElementById('elem');
+            let currentWidth = parseInt(elem.style.width);
+            let currentHeight = parseInt(elem.style.height);
+            
+            elem.style.width = (currentWidth + 50) + 'px';
+            elem.style.height = (currentHeight + 50) + 'px';
+        }
+    </script> -->
+
+    <!-- ЗАДАНИЕ 4стр.
+        <div id="elem" style="width: 300px; height: 200px; border: 1px solid red;">
+        text
+    </div>
+    <button id="btn">
+        Вывести параметры рамки
+    </button>
+    <script>
+    const elem = document.getElementById('elem');
+    const border = elem.style.border;
+
+    document.getElementById('btn').addEventListener('click', function() {
+    const borderParts = border.split(' ');
+    const borderWidth = borderParts[0];
+    const borderType = borderParts[1];
+    const borderColor = borderParts[2];
+
+    console.log({borderWidth});
+    console.log({borderType});
+    console.log({borderColor});
+    });
+    </script> -->
+     
+<!-- Задание 5стр. -->
+    <!-- <div id="elem" style="display: block;">
+        Это див
+    </div>
+    <button id="hideBtn">
+        Спрятать див
+    </button>
+    <button id="showBtn">
+        Показать див
+    </button> -->
+
+    <!-- Задание 2 -->
+
+    <!-- <div id="elem">
+        Это див
+    </div>
+    <button id="colorBtn">
+        Изменить цвет
+    </button>
+    <button id="resetBtn">
+        Сбросить цвет
+    </button> -->
+
+    <!-- <script>
+
+// const elem = document.getElementById('elem');
+// const hideBtn = document.getElementById('hideBtn');
+// const showBtn = document.getElementById('showBtn');
+// hideBtn.addEventListener('click', function() {
+//   elem.style.display = 'none';
+// });
+// showBtn.addEventListener('click', function() {
+//   elem.style.display = '';
+// });
+
+// const elem = document.getElementById('elem');
+// const colorBtn = document.getElementById('colorBtn');
+// const resetBtn = document.getElementById('resetBtn');
+// let originalColor = elem.style.backgroundColor;
+// colorBtn.addEventListener('click', function() {
+//   elem.style.backgroundColor = 'blue';
+// });
+// resetBtn.addEventListener('click', function() {
+//   elem.style.backgroundColor = originalColor;
+// });
+</script> -->
+
+<!-- ЗАДААНИЕ СТР.7. 
+<div id="myDiv">
+    Этот div будет иметь стили, установленные с помощью cssText
+</div>
+        <script>
+    const elem = document.getElementById('myDiv');
+        elem.style.cssText = `
+        width: 300px;
+        height: 100px;
+        margin: 10px auto;
+        color: red;
+        `;
+        </script> -->
+
+                <!-- ЗАДАНИЕ стр.8 -->
+
+        <!-- <style>
+            /* Задание 1 */
+
+/* #elem {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+} */
+
+/* Задание 2  */
+
+#elem {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    transition: all 0.3s ease;
+}
+        </style> -->
+        <!-- Задание 1 -->
+
+    <!-- <div id="elem">
+        Элемент
+    </div>
+    <button id="btn">
+        Получить ширину и высоту
+    </button> -->
+
+    <!-- Задание 2 -->
+
+    <!-- <div id="elem">
+        Элемент
+    </div>
+    <button id="btn">
+        Увеличить
+    </button> -->
+    <!-- <script>
+        //Задание 1
+
+// const elem = document.getElementById('elem');
+//   const btn = document.getElementById('btn');
+//   btn.addEventListener('click', () => {
+//   const computedStyle = getComputedStyle(elem);
+//   console.log(Ширина: ${computedStyle.width}, Высота: ${computedStyle.height});
+//   });
+
+// Задание 2
+
+// const elem = document.getElementById('elem');
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click', () => {
+//   const currentWidth = elem.clientWidth;
+//   const currentHeight = elem.clientHeight;
+//   elem.style.width =   `${currentWidth * 2}px`;
+//   elem.style.height = `$ {currentHeight * 2}px`;
+// });
+//     </script> -->
+
+            <!-- ЗАДАНИЕ СТР.9
+<div id="elem">
+    Текст с заданным размером шрифта
+</div>
+<button id="btn">
+    Получить размер шрифта
+</button>
+
+<script>
+    const elem = document.getElementById('elem');
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+        const computedStyle = window.getComputedStyle(elem);
+        const fontSize = computedStyle.fontSize;
+        alert(`Размер шрифта элемента: ${fontSize}`);
+    });
+    </script> -->
+
+            <!-- ЗАДАНИЕ СТР.10
+
+ <style>
+    .red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+ </style>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <script>
+        const paragraphs = document.querySelectorAll('p');
+paragraphs.forEach(paragraph => {
+    const number = parseInt(paragraph.textContent);
+    if (number % 2 === 0) {
+        paragraph.classList.add('red');
+    } else {
+        paragraph.classList.add('green');
+    }
+});
+    </script> -->
+
+
+    <!-- ЗАДАНИЕ СТР.11
+
+    <p>Абзац 1</p>
+    <p>Абзац 2</p>
+    <p>Абзац 3</p>
+
+    <script>
+        const paragraphs = document.querySelectorAll('p');
+paragraphs.forEach(paragraph => {
+    paragraph.addEventListener('click', () => {
+        if (paragraph.style.color === 'red') {
+            paragraph.style.color = 'black';
+        } else {
+            paragraph.style.color = 'red';
+        }
+    });
+}); -->
+    <!-- </script> -->
+    <!-- ЗАДАНИЕ СТР.12
+<style>
+    .valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+</style>
+
+    <input type="text" id="inputField">
+
+    <script>
+        const inputField = document.getElementById('inputField');
+inputField.addEventListener('blur', function() {
+    if (inputField.value.length <= 9) {
+        inputField.classList.remove('invalid');
+        inputField.classList.add('valid');
+    } else {
+        inputField.classList.remove('valid');
+        inputField.classList.add('invalid');
+    }
+});
+    </script> -->
+
+            <!-- ЗАДАНИЕ СТР.13
+
+    <style>
+        input[data-type="success"] {
+    border: 2px solid green;
+}
+
+input[data-type="warning"] {
+    border: 2px solid yellow;
+}
+
+input[data-type="error"] {
+    border: 2px solid red;
+}
+    </style>
+
+    <input type="text" id="inputField">
+    
+    <script>
+        const inputField = document.getElementById('inputField');
+    inputField.addEventListener('blur', function() {
+        const inputValue = parseInt(inputField.value);
+        if (inputValue < 10) {
+            inputField.dataset.type = 'success';
+        } else if (inputValue >= 10 && inputValue < 20) {
+            inputField.dataset.type = 'warning';
+        } else {
+            inputField.dataset.type = 'error';
+        }
+    });
+    </script> -->
+</body>
+</html>
