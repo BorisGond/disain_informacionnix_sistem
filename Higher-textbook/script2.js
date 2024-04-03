@@ -118,17 +118,17 @@
 // });
 
 // Задание 23.1
-// let div = document.createElement('div');
-// div.style.overflowY = 'scroll';
-// div.style.width = '50px';
-// div.style.height = '50px';
-// document.body.append(div);
+let div = document.createElement('div');
+div.style.overflowY = 'scroll';
+div.style.width = '50px';
+div.style.height = '50px';
+document.body.append(div);
 
-// let scrollWidth = div.offsetWidth - div.clientWidth;
-// div.remove();
+let scrollWidth = div.offsetWidth - div.clientWidth;
+div.remove();
 
-// let button = document.getElementById('yourButtonId');
+let button = document.getElementById('yourButtonId');
 
-// button.addEventListener('click', function() {
-//   console.log(scrollWidth);
-// });
+button.addEventListener('click', function() {
+  console.log(scrollWidth);
+});
